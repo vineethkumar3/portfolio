@@ -3,35 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Portfolio</title>
+    <title>Vineeth Kumar Boddu - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Vineeth Kumar Boddu</h1>
-        <p>DevOps Engineer | Cloud Enthusiast</p>
+        <div class="container">
+            <h1>Vineeth Kumar Boddu</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Passionate DevOps Engineer with expertise in Azure, Terraform, Ansible, and Kubernetes.</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Heart Disease Prediction</h3>
-            <p>Machine learning model to predict heart disease.</p>
-            <a href="https://github.com/yourgithub/heart-disease-prediction" target="_blank">View on GitHub</a>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="profile.jpg" alt="Vineeth Kumar Boddu" class="profile-pic">
+                <p>
+                    Hello! I'm Vineeth Kumar Boddu, a passionate software engineer with expertise in Python, Java, and DevOps. 
+                    I have experience in building CI/CD pipelines, automating infrastructure with Terraform, and developing 
+                    microservices. I'm currently pursuing my Master's in Computer Science at the University of Cincinnati 
+                    and working as a Research Assistant. I love solving complex problems and turning ideas into reality through code.
+                </p>
+            </div>
         </div>
-        <div class="project">
-            <h3>Cloud-based Health Data Pipeline</h3>
-            <p>Automating real-time health data processing and visualization.</p>
-            <a href="https://github.com/yourgithub/health-data-pipeline" target="_blank">View on GitHub</a>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Research Assistant (Part-Time)</h3>
+                <p><strong>University of Cincinnati</strong> | 11/2023 – 12/2024 | Ohio, USA</p>
+                <ul>
+                    <li>Assisted in the Mapping P2P Overlay Network project using Python, Web Scraping, Twisted, and Pyro4 modules.</li>
+                    <li>Automated VM setup with Ansible and visualized network topologies using Mercator and Cytoscape.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Senior Software Engineer</h3>
+                <p><strong>Wipro Technologies</strong> | 05/2021 – 07/2023 | Hyderabad, India</p>
+                <ul>
+                    <li>Developed Python scripts for CI/CD pipelines, integrating Jenkins, Git, and Azure DevOps.</li>
+                    <li>Built microservices dashboards using REST APIs, Python, and the ELK stack.</li>
+                    <li>Implemented security scans using SonarQube, Hadolint, Anchore, and Trivy.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Java Backend Developer</h3>
+                <p><strong>Wipro Technologies</strong> | 12/2020 – 04/2021 | Hyderabad, India</p>
+                <ul>
+                    <li>Developed Java microservices using Spring Boot and wrote JUnit tests for code coverage.</li>
+                </ul>
+            </div>
         </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: bvineethkumar56@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Master of Computer Science</h3>
+                <p><strong>University of Cincinnati</strong> | 08/2023 – 12/2024 | Ohio, USA | GPA: 3.9/4</p>
+            </div>
+            <div class="education-item">
+                <h3>Bachelor of Computer Science</h3>
+                <p><strong>Gudlavalleru Engineering College</strong> | 08/2016 – 09/2020 | Gudivada, India | GPA: 8.54/10</p>
+            </div>
+        </div>
     </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill">Python</div>
+                <div class="skill">Java</div>
+                <div class="skill">Azure DevOps</div>
+                <div class="skill">Git</div>
+                <div class="skill">Jenkins</div>
+                <div class="skill">Docker</div>
+                <div class="skill">Kubernetes</div>
+                <div class="skill">Terraform</div>
+                <div class="skill">Ansible</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">Elastic Search</div>
+                <div class="skill">MongoDB</div>
+                <div class="skill">HTML/CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Spring Boot</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Dynamic Cache Simulator</h3>
+                    <p>Implemented D-Cache in Java to optimize system performance by dynamically adjusting cache size based on hit rate.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Heart Disease Prediction</h3>
+                    <p>Developed a Machine Learning algorithm using Python to predict heart disease using Random Forest, SVM, and KNN.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Data Compression using Huffman Coding</h3>
+                    <p>Implemented Huffman coding in Java for lossless data compression of text and image files.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me for collaborations or opportunities!</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:bvineethkumar56@gmail.com">bvineethkumar56@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Cincinnati, OH, USA</p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/VineethKumar" target="_blank">GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Vineeth Kumar Boddu. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
