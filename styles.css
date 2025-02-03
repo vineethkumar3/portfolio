@@ -82,12 +82,18 @@ section h2 {
 
 .profile-pic {
     width: 40%;
-    height: 40%;
+    height: 500px;
     border-radius: 10px;
     object-fit: cover;
     margin-left: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    
+    /* Optional Hover Effect */
+    transition: box-shadow 0.3s ease-in-out;
 }
-
+.profile-pic:hover {
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4);
+}
 /* Experience Section */
 .experience-item {
     margin-bottom: 30px;
