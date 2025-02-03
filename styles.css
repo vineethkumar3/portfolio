@@ -138,9 +138,12 @@ section h2 {
     background: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
 }
-
+.project-card:hover {
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4);
+}
 .project-card h3 {
     margin-top: 0;
 }
