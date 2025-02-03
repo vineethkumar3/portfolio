@@ -70,14 +70,17 @@ section h2 {
 .about-content {
     display: flex;
     align-items: center;
-    gap: 20px;
+}
+.right-image {
+    justify-content: space-between;
 }
 
 .profile-pic {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 10px;
     object-fit: cover;
+    margin-left: 20px;
 }
 
 /* Experience Section */
