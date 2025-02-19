@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -26,6 +27,15 @@
         </div>
     </header>
 
+
+<!-- Add this below the header -->
+<section class="hero">
+    <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Transforming ideas into reality through code and innovation.</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+</section>
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
@@ -35,8 +45,7 @@
                 <p>
                     Hello! I'm Vineeth Kumar Boddu, a passionate software engineer with expertise in Python, Java, and DevOps. 
                     I have experience in building CI/CD pipelines, automating infrastructure with Terraform, and developing 
-                    microservices. I'm currently pursuing my Master's in Computer Science at the University of Cincinnati 
-                    and working as a Research Assistant. I love solving complex problems and turning ideas into reality through code.
+                    microservices. 
                 </p>
                  <img src="./vineeth.jpg" alt="Vineeth Kumar Boddu" class="profile-pic">
             </div>
@@ -94,9 +103,15 @@
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-list">
-                <div class="skill">Python</div>
-                <div class="skill">Java</div>
-                <div class="skill">Azure DevOps</div>
+                <div class="skill">
+                    <i class="fab fa-python"></i> Python
+                </div>
+                <div class="skill">
+                    <i class="fab fa-java"></i> Java
+                </div>
+                <div class="skill">
+                    <i class="fab fa-DevOps"></i> Azure DevOps
+                </div>
                 <div class="skill">Git</div>
                 <div class="skill">Jenkins</div>
                 <div class="skill">Docker</div>
@@ -112,23 +127,40 @@
             </div>
         </div>
     </section>
-
+    // Include AOS library in your HTML
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2>Projects</h2>
             <div class="project-grid">
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up">
+                        <h3>Cloud Based Health Data Processing and Data Visualization pipeline</h3>
+                        <i>Master of Science (August 2024 - December 2024)</i>
+                        <p>Developed a Dashboard by using Grafana and Prometheus to visualize the patient’s metrics in a continuous way.  What made this dashboard unique is reflecting the metrics in few seconds because in this CICD pipeline was used to collect the metrics of the patients continuously without saving it in a file. Used Azure blob storage, Azure pipelines, Linux VM.</p>
+                        <p><h3>Technologies:</h3> Azure DevOps, Azure Blob Storage, Grafana, Prometheus, Linux VM</p>
+                </div>
+                <div class="project-card" data-aos="fade-up">
                     <h3>Dynamic Cache Simulator</h3>
-                    <p>Implemented D-Cache in Java to optimize system performance by dynamically adjusting cache size based on hit rate.</p>
+                    <i>Master of Science (January 2024 - April 2024)</i>
+                    <p>The Dynamic Cache Simulator is a Java-based solution designed to optimize system performance by dynamically adjusting cache size based on real-time hit rate analysis. The simulator models a D-Cache (Data Cache) with various replacement policies, enhancing memory efficiency for modern applications.</p>
+                    <p><h3>Technologies:</h3> Java, Cache Replacement Policies, Memory Management</p>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up">
                     <h3>Heart Disease Prediction</h3>
-                    <p>Developed a Machine Learning algorithm using Python to predict heart disease using Random Forest, SVM, and KNN.</p>
+                    <i>Bachelor of Computer Science (January 2020)</i>
+                    <p>The Heart Disease Prediction system is a Machine Learning model built using Python to predict the likelihood of heart disease based on patient health data. The project utilizes Random Forest, Support Vector Machine (SVM), and K-Nearest Neighbors (KNN) to classify patients as at risk or not. The model is trained on medical datasets with features such as age, blood pressure, cholesterol levels, and other key indicators.</p>
+                    <p><h3>Technologies:</h3> Python, Machine Learning, Random Forest, SVM, KNN</p>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up">
                     <h3>Data Compression using Huffman Coding</h3>
-                    <p>Implemented Huffman coding in Java for lossless data compression of text and image files.</p>
+                    <i>Bachelor of Computer Science (April 2019)</i>
+                    <p>The Huffman Coding project is a Java-based implementation for lossless data compression of text and image files. The algorithm efficiently reduces file sizes by encoding frequently occurring characters with shorter bit sequences, making it highly effective for data storage and transmission.</p>
+                    <p><h3>Technologies:</h3> Java, Huffman Coding, Data Compression</p>
                 </div>
             </div>
         </div>
@@ -140,10 +172,22 @@
             <h2>Contact</h2>
             <p>Feel free to reach out to me for any further discussion</p>
             <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:bvineethkumar56@gmail.com">bvineethkumar56@gmail.com</a></p>
-                <p><i class="fas fa-map-marker-alt"></i> Cincinnati, OH, USA</p>
-                <p><i class="fab fa-github"></i> <a href="https://github.com/VineethKumar" target="_blank">GitHub</a></p>
-                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/vineeth-kumar-boddu-62b18b181/" target="_blank">Linkedin Profile</a></p>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:bvineethkumar56@gmail.com">bvineethkumar56@gmail.com</a>
+                </p>
+                <p data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Cincinnati, OH, USA
+                </p>
+                <p data-aos="fade-up" data-aos-delay="300">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/VineethKumar" target="_blank">GitHub</a>
+                </p>
+                <p data-aos="fade-up" data-aos-delay="400">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/vineeth-kumar-boddu-62b18b181/" target="_blank">LinkedIn</a>
+                </p>
             </div>
         </div>
     </section>
@@ -152,6 +196,11 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Vineeth Kumar Boddu. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/VineethKumar3" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/vineeth-kumar-boddu-62b18b181/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:bvineethkumar56@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
     </footer>
 </body>
