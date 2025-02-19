@@ -165,3 +165,151 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
 }
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+
+/*photo animation*/
+.about {
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    padding: 80px 0;
+}
+
+.profile-pic {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.skill i {
+    margin-right: 8px;
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #3498db;
+    font-weight: 600;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode {
+    background: #1a1a1a;
+    color: #f4f4f4;
+}
+
+.dark-mode header, .dark-mode footer {
+    background: #111;
+}
+
+.dark-mode .project-card {
+    background: #333;
+    color: #f4f4f4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+.contact-info p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #3498db;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #2980b9;
+}
+
+.contact-info p:hover i {
+    transform: scale(1.2);
+    color: #2980b9;
+}
